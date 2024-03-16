@@ -1,14 +1,13 @@
-import Link from 'next/link';
+
 import Image from 'next/image';
-import save from '../save';
-
-import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
-import { BsBookmark, BsEmojiSmile, BsThreeDots } from 'react-icons/bs';
-import { FaRegComment } from 'react-icons/fa';
-import { IoShareOutline } from 'react-icons/io5';
 
 
-const Post = (Link) => {
+import {  AiOutlineHeart } from 'react-icons/ai';
+import { BsBookmark, BsThreeDots } from 'react-icons/bs';
+
+
+
+const Post = () => {
 
   return (
     <div className='flex flex-col w-full border border-gray-100 bg-black/50 border-1 '>
@@ -26,12 +25,12 @@ const Post = (Link) => {
       <div className='flex items-center space-x-2'>
         
         <div>
-          <link href="/save"></link><AiOutlineHeart size={23}
+          <AiOutlineHeart size={23}
            className='text-black cursor-pointer hover:text-black/50'/>
         </div>
       
       </div>
-      <div className=''> <link href='/save'>save</link><BsBookmark size={20}
+      <div className=''><BsBookmark size={20}
        className='text-black cursor-pointer hover:text-black/50'/></div>
     </div>
    
