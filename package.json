@@ -23,6 +23,8 @@
   "netlify": {
     "build": {
       "command": "npm run build",
+      "commandOrigin":"ui",
+      "environment": "- NEXT_PRIVATE_TARGET",
       "publish": "/opt/build/repo/.next",
       "publishOrigin": "ui"
       },
