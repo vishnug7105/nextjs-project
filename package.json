@@ -24,15 +24,15 @@
     "build": {
       "command": "npm run build",
       "publish": "/opt/build/repo/.next",
-      "environment": {
-        "NEXT_PRIVATE_TARGET": "<your_target_value>"
+      "publishOrigin": "ui"
       },
       "plugins": [
         {
           "package": "@netlify/plugin-nextjs",
-          "inputs": {}
+          "inputs": {},
+          "origin": "ui"
         }
       ]
     }
   }
-}
+
